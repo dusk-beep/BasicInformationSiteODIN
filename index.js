@@ -28,13 +28,13 @@ const server = http.createServer((req,res) => {
 
     } else {
     res.setHeader('content-Type','text/html;charset=utf-8');
-    res.statusCode =200;
+    res.statusCode = 200;
     res.end(data);
     }
   })
 })
 
 server.listen(options.port,() => {
-  console.log("Server is running in localhost port 8080")
+  console.log(`Server is running in localhost port {options.port}`)
 })
 
